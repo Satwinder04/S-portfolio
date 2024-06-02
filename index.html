@@ -28,7 +28,11 @@
                     <a target="_blank" href="https://github.com/Satwinder04">Github</a>
                     <a target="_blank" href="https://uiverse.io/profile/Satwinder04">UIverse</a>
                     <a target="_blank" href="https://www.instagram.com/satwinder.salan/?hl=en">InsTa</a>
-                    
+                    <label class="switch">
+                        <!-- <button onclick="dark()"></button> -->
+                        <input type="checkbox" onclick="dark()">
+                        <span class="slider"></span>
+                      </label>
                 </div>
             </div>
             <div id="heading">
@@ -145,6 +149,12 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="sript1.js"></script>
+    <script>
+        function dark() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
 </body>
 
 </html>

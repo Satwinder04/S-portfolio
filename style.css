@@ -3,79 +3,104 @@
     src: url(fonts/GeneralSans-Regular.otf);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: mnnu;
     cursor: none;
 }
-body,html{
+
+body,
+html {
     height: 100%;
     width: 100%;
 }
-:root{
+
+:root {
     --themecolor: black;
     --themebg: white;
-
 }
+
+body,
+body a {
+    background: var(--themebg);
+    color: var(--themecolor);
+}
+
+.dark-mode,
+.dark-mode a {
+    background-color: black;
+    color: white;
+}
+
 #minicircle {
-    transition: all cubic-bezier(0.19,1,0.22,1) 0.5s;
-    height:12px;
-    width: 12px; 
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    height: 12px;
+    width: 12px;
     position: absolute;
     z-index: 99999;
-    border-radius: 50%; 
+    border-radius: 50%;
     backdrop-filter: invert(100%);
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0);
 }
-#main{
+
+#main {
     width: 100%;
-    background-color: var(--themebg); 
+    /* background-color: var(--themebg);  */
 }
-#hero{
+
+#hero {
     position: relative;
-    color: var(--themecolor);
+    /* color: var(--themecolor); */
     width: 100%;
     height: 100vh;
-    background-color: var(--themebg);
+    /* background-color: var(--themebg); */
 }
-#nav{
+
+#nav {
     width: 100%;
     padding: 20px 40px;
-    color: var(--themecolor);
+    /* color: var(--themecolor); */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#nav a{
+
+#nav a {
     text-decoration: none;
     font-size: 20px;
-    color: var(--themecolor);
+    /* color: var(--themecolor); */
 }
 
-.acc{
+.acc {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.acc a{
+
+.acc a {
     padding: 0 10px;
     font-size: 16px !important;
-    
+
 }
 
-.bounding{
+.bounding {
     overflow: hidden;
     width: fit-content;
-    
+
 }
-.bounding .boundingelem{
+
+.bounding .boundingelem {
     transform: translateY(100%);
 }
-#heading{
+
+#heading {
     margin-top: 90px;
 
 }
-#heading h1{
+
+#heading h1 {
     margin-left: 30px;
     opacity: 0.8;
     line-height: 1;
@@ -83,33 +108,39 @@ body,html{
     text-transform: uppercase;
     font-weight: 900;
 }
-#heading #sh{
+
+#heading #sh {
     margin-left: 200px;
 }
+
 .blocktext {
     display: flex;
     flex-direction: column;
     align-items: end;
     width: fit-content;
-    
+
 }
-.blocktext h5{
+
+.blocktext h5 {
     text-align: right;
 }
-.chotiheadings{
+
+.chotiheadings {
     display: flex;
     align-items: end;
     flex-direction: column;
     margin-top: 100px;
     padding-right: 50px;
 }
-.chotiheadings h5{
+
+.chotiheadings h5 {
     text-transform: uppercase;
     margin-top: .5vw;
     font-size: 1vw;
     text-align: right;
 }
-#herofooter{
+
+#herofooter {
     width: 100%;
     position: absolute;
     bottom: 3%;
@@ -118,16 +149,19 @@ body,html{
     align-items: center;
     justify-content: space-between;
 }
-#herofooter a{
-    color: var(--themecolor);
+
+#herofooter a {
+    /* color: var(--themecolor); */
     text-transform: uppercase;
     text-decoration: none;
 }
-#herofooter #iconset{
+
+#herofooter #iconset {
     display: flex;
     gap: 5px;
 }
-#herofooter .circle{
+
+#herofooter .circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,15 +170,17 @@ body,html{
     border-radius: 50%;
     background-color: #888;
 }
-#second{
-    color: var(--themecolor);
+
+#second {
+    /* color: var(--themecolor); */
     padding-right: 10vw;
     padding-top: 200px;
-    background-color: var(--themebg);
+    /* background-color: var(--themebg); */
     width: 100%;
     /* height: 130vh; */
 }
-.element{
+
+.element {
     position: relative;
     display: flex;
     align-items: center;
@@ -154,92 +190,107 @@ body,html{
     width: 100%;
     border-top: 1px solid #888;
 }
-.element h1{
+
+.element h1 {
     text-transform: uppercase;
     font-size: 7vw;
     opacity: .7;
 }
-.elemlast{
+
+.elemlast {
     border-bottom: 1px solid #888;
 }
-.element img{
+
+.element img {
     opacity: 0;
     height: 140%;
     position: absolute;
     z-index: 999;
-  
-}
-#about{
-    display: flex;
-    align-items: center;
-    color: var(--themecolor);
-    gap: 50px;
-    padding: 10vw 10vw;
-    padding-left: 40vw ;
-    width: 100%;
-    background-color: var(--themebg)
+
 }
 
-.textabout{
-    width: 25rem;
-    
+#about {
+    display: flex;
+    align-items: center;
+    /* color: var(--themecolor); */
+    gap: 50px;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    /* background-color: var(--themebg) */
 }
-.textabout h5{
+
+.textabout {
+    width: 25rem;
+
+}
+
+.textabout h5 {
     text-transform: uppercase;
     opacity: .6;
     margin-bottom: 10px;
 }
-.textabout p{
+
+.textabout p {
     line-height: 1.7;
     margin-bottom: 30px;
 }
-#about img{
+
+#about img {
     width: 200px;
 }
-.textabout a{
+
+.textabout a {
     padding: 12px 22px;
-    border: 1px solid var(--themecolor);
+    /* border: 1px solid var(--themecolor); */
     border-radius: 100px;
-    color: var(--themecolor);
+    /* color: var(--themecolor); */
     text-decoration: none;
     font-size: 12px;
 }
-#subscribe{
-    background-color: var(--themebg);
+
+#subscribe {
+    /* background-color: var(--themebg); */
     padding: 20px 30px;
-    color: var(--themecolor);
+    /* color: var(--themecolor); */
     padding-bottom: 7vw;
 }
-#subscribe h5{
+
+#subscribe h5 {
     text-transform: uppercase;
     opacity: .6;
 }
-#subscribe h3{
+
+#subscribe h3 {
     text-transform: uppercase;
     font-size: 14px;
     margin-top: 10px;
 }
-#footer{
-    background-color: var(--themebg);
-    color: var(--themecolor);
+
+#footer {
+    /* background-color: var(--themebg); */
+    /* color: var(--themecolor); */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 30px;
-    
+
 }
-#footerleft{
+
+#footerleft {
     display: flex;
     gap: 20px;
 
 }
-#footerright{
+
+#footerright {
     display: flex;
     gap: 30px;
 }
-#footer a{
+
+#footer a {
     text-decoration: none;
-    color: var(--themecolor);
+    /* color: var(--themecolor); */
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
@@ -254,29 +305,29 @@ body,html{
     height: 200px;
     border-radius: 50%;
     perspective: 1000px;
-  }
-  
-  .card-inner {
+}
+
+.card-inner {
     width: 100%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-  }
-  
-  .card:hover .card-inner {
+}
+
+.card:hover .card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .card-front,
-  .card-back {
+}
+
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  
-  .card-front {
+}
+
+.card-front {
     background-color: #6a2c7000;
     color: #fff;
     display: flex;
@@ -286,9 +337,9 @@ body,html{
     justify-content: center;
     font-size: 24px;
     transform: rotateY(0deg);
-  }
-  
-  .card-back {
+}
+
+.card-back {
     background-color: #41414136;
     color: #fff;
     display: flex;
@@ -298,7 +349,59 @@ body,html{
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-  }
-  .card-back img{
+}
+
+.card-back img {
     border-radius: 50% 50% 50% 0px;
-  }
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    transform: scale(0.8);
+    cursor: none;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fdfdfd;
+    box-shadow: inset 2px 5px 15px rgba(184, 184, 184, 0.3);
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 0.1em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: rgb(0, 0, 0);
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+}
+
+input:checked+.slider:before {
+    transform: translateX(2.8em) rotate(360deg);
+    background: white;
+}
