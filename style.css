@@ -492,11 +492,11 @@ body a {
     position: absolute;
     content: "";
     height: 1.4em;
-    width: 0.1em;
+    width: 0.4em;
     border-radius: 0px;
     left: 0.3em;
-    bottom: 0.3em;
-    background-color: rgb(0, 0, 0);
+    bottom: 0.28em;
+    background-color: rgb(255, 0, 0);
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
@@ -512,5 +512,5 @@ input:checked+.slider:before {
     -webkit-transform: translateX(2.8em) rotate(360deg);
         -ms-transform: translateX(2.8em) rotate(360deg);
             transform: translateX(2.8em) rotate(360deg);
-    background: white;
+    background: rgb(255, 0, 0);
 }
