@@ -16,7 +16,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-family: mnnu;
-    cursor: none;
+    /* cursor: none; */
 }
 
 body,
@@ -30,15 +30,21 @@ html {
     --themebg: white;
 }
 
-body,
-body a {
+body{
     background: var(--themebg);
     color: var(--themecolor);
 }
+body a {
+    background: transparent;
+    color: var(--themecolor);
+}
 
-.dark-mode,
-.dark-mode a {
+.dark-mode{
     background-color: black;
+    color: white;
+}
+.dark-mode a {
+    background-color: rgba(0, 0, 0, 0);
     color: white;
 }
 
@@ -46,19 +52,26 @@ body a {
     -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
     -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-    height: 12px;
-    width: 12px;
+    height:902px;
+    width: 902px;
     position: absolute;
-    z-index: 99999;
+    left: -23%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
     border-radius: 50%;
-    -webkit-backdrop-filter: invert(100%);
-            backdrop-filter: invert(100%);
-    background-color: rgba(0, 0, 0, 0);
+    /* -webkit-backdrop-filter: invert(100%);
+            backdrop-filter: invert(100%); */
+    background-color: rgba(255, 6, 6, 0.149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #main {
     width: 100%;
-    /* background-color: var(--themebg);  */
+    background-color: rgba(255, 255, 255, 0); 
+    backdrop-filter: blur(100px);
 }
 
 #hero {
@@ -463,14 +476,14 @@ body a {
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
             transform: scale(0.8);
-    cursor: none;
+    /* cursor: none; */
 }
 
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-    cursor: none;
+    /* cursor: none; */
 }
 
 .slider {
