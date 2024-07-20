@@ -271,7 +271,7 @@ body a {
 
 .element h1 {
     text-transform: uppercase;
-    font-size: 7vw;
+    font-size: 5vw;
     opacity: .7;
 }
 
@@ -638,17 +638,17 @@ input:checked+.slider:before {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
    */
-#projects .prohd::before {
+.prohd::before {
     transform: scaleX(0);
     transform-origin: bottom right;
 }
 
-#projects .prohd:hover::before {
+.prohd:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-#projects .prohd::before {
+.prohd::before {
     content: " ";
     display: block;
     position: absolute;
@@ -662,14 +662,15 @@ input:checked+.slider:before {
     transition: transform .3s ease;
 }
 
-#projects .prohd {
+.prohd {
     padding-right: 20px;
     width: fit-content;
     position: relative;
-    font-size: 9vw;
+    font-size: 7vw;
     cursor: pointer;
     /* color: #1717178b; */
     opacity: 0.5;
+    text-transform: uppercase;
 }
 
 .grids {
@@ -681,7 +682,7 @@ input:checked+.slider:before {
 }
 
 .grid1 {
-    width: 40%;
+    width: 50%;
     min-height: 100vh;
     padding: 20px;
     /* color:var(--themecolor); */
@@ -689,7 +690,7 @@ input:checked+.slider:before {
 }
 
 .grid2 {
-    width: 40%;
+    width: 50%;
     min-height: 100vh;
     /* color:var(--themecolor); */
     padding: 20px;
@@ -855,3 +856,16 @@ input:checked+.slider:before {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
