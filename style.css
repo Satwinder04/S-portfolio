@@ -26,8 +26,8 @@ html {
 }
 
 :root {
-    --themecolor: black;
-    --themebg: white;
+    --themecolor: rgb(62, 62, 62);
+    --themebg: rgb(255, 244, 244);
 }
 
 body {
@@ -41,7 +41,7 @@ body a {
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: rgb(20, 0, 0);
     color: white;
 }
 
@@ -663,6 +663,7 @@ input:checked+.slider:before {
 }
 
 .prohd {
+    margin-top: 100px;
     padding-right: 20px;
     width: fit-content;
     position: relative;
